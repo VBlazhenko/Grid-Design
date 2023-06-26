@@ -25,6 +25,12 @@ h1, h2,strong {
     margin-bottom: 0;
 }
 
+.section-title {
+    font-size: 1.25rem;
+    color: black;
+    margin-top: 1.25em;
+}
+
 .btn {
     padding: .5em 1.5em;
     font-weight: 700;
@@ -38,14 +44,46 @@ h1, h2,strong {
     justify-self: start;
 }
 
-.hero {
+.main-grid {
     display: grid;
     grid-template-columns: minmax(1em, 1fr), minmax(0px, 500px), minmax(1em, 1fr);
+}
+
+.footer {
+    background: #ebebeb;
+    padding: 4em 0;
+    text-align: center;
+}
+
+.footer-main,
+.social-list {
+    grid-column: 2 / -2;
+}
+
+.social-list {
+    order: -1;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2em;
+    display: flex;
+    justify-content: center;
+}
+
+.hero {
     background-image: url(img/hero-bg.jpg);
     padding: 4em 0;
     color: #fff;
 }
 
-.herp > * {
+.hero > * {
     grid-column: 2 / -2 ;
+}
+
+.info {
+    padding: 4em 0;
+    text-align: center;
+}
+
+.col { 
+    grid-column: 2 / -2;
 }
