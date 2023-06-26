@@ -22,6 +22,20 @@ h1, h2,strong {
 .hero-title {
     font-size: 1.5rem;
     line-height: 1.4;
+    margin-bottom: 0;
+}
+
+.btn {
+    padding: .5em 1.5em;
+    font-weight: 700;
+    margin-top: .5em;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: #ffe600;
+    color: black;
+    justify-self: start;
 }
 
 .hero {
