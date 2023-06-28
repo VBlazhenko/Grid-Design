@@ -49,6 +49,12 @@ h1, h2,strong {
     grid-template-columns: minmax(1em, 1fr), minmax(0px, 500px), minmax(1em, 1fr);
 }
 
+@media (min-width: 600px) {
+    .main-grid {
+        grid-template-columns: minmax(1em, 1fr) repeat(3, minmax(180px, 320px)) minmax(1em, 1fr);
+    }
+}
+
 .footer {
     background: #ebebeb;
     padding: 4em 0;
@@ -60,6 +66,17 @@ h1, h2,strong {
     grid-column: 2 / -2;
 }
 
+.footer-logo,
+.footer-text,
+.footer-fineprint {
+    opacity: .4;
+}
+
+.footer-fineprint {
+    font-size: .75rem;
+    margin-top: .3em;
+}
+
 .social-list {
     order: -1;
     list-style: none;
@@ -69,14 +86,35 @@ h1, h2,strong {
     justify-content: center;
 }
 
+.social-link {
+    color: #000;
+    font-size: 1.7rem;
+    margin: 0 .5em;
+}
+
+.social-link:hover{
+    color: #777;
+}
+
 .hero {
     background-image: url(img/hero-bg.jpg);
+    background-size: cover;
+    background-position: bottom;
     padding: 4em 0;
     color: #fff;
 }
 
 .hero > * {
     grid-column: 2 / -2 ;
+}
+
+@media (min-width: 600px) {
+    .hero{
+        padding: 6em 0;
+    }
+    .hero > * {
+    grid-column: 2 / span 2;
+    }
 }
 
 .info {
