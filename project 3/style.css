@@ -90,10 +90,12 @@ h1, h2, strong {
     right: 0;
     bottom: 0;
     left: 100%;
+    transform: translateX(0);
+    transition: transform 250ms;
 }
 
 .navigation-open {
-    transform: translateX(0);
+    transform: translateX(-100%);
 }
 
 .nav-list {
@@ -130,6 +132,15 @@ h1, h2, strong {
     position: absolute;
 }
 
+.open-nav {
+    border: 0;
+    background: 0;
+    color: #fff;
+    cursor: pointer;
+    padding: .5em;
+    margin-left: auto;
+    font-size: 1.5em;
+}
 
 /* footer */
 
